@@ -1,0 +1,17 @@
+
+@font-face{
+font-family: 'exo';
+src: url("./Exo-Medium.ttf")
+} 
+.score {
+font-family: "phi";
+
+}
+@font-face{
+font-family: 'phi';
+src: url("./phigros.ttf")
+} 
+.phi {
+font-family: "phi";
+
+}
