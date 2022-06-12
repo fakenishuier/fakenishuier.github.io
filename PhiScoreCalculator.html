@@ -1,0 +1,401 @@
+<script>
+totals={
+	"chapter_1":{
+		1:{
+			1:[66,1.1],
+			2:[418,6.7],
+			3:[729,12.5],
+			5:[611,11.2]
+		  },
+		2:{
+			1:[111,3.5],
+			2:[210,7.5],
+			3:[463,11.6]
+		},
+		3:{
+			1:[188,4.4],
+			2:[355,10.4],
+			3:[535,13.7]
+		},
+		4:{
+			1:[126,4.7],
+			2:[262,10.5],
+			3:[433,13.4],
+			5:[564,15.2]
+		}
+	},
+	"chapter_2":{
+	    5:{
+			1:[249,4.9],
+			2:[453,8.4],
+			3:[517,12.8],
+			5:[532,13.8],
+			999:[2500,0.0]
+		},
+		6:{
+			1:[401,6.7],
+			2:[696,10.7],
+			3:[733,13.4],
+			5:[909,13.4],
+			999:[924,0.0]
+		},
+		7:{
+			1:[290,5.3],
+			2:[608,11.4],
+			3:[978,14.8],
+			5:[753,13.9]
+		},
+		8:{
+			1:[380,6.8],
+			2:[526,10.8],
+			3:[969,14.7]
+		},
+		9:{
+			1:[165,4.1],
+			2:[537,11.3],
+			3:[843,14.8]
+		},
+	},
+	"chapter_3":{
+		10:{
+			1:[182,5.6],
+			2:[328,8.8],
+			3:[554,12.6],
+			4:[651,12.9]
+		},
+		11:{
+			1:[419,4.4],
+			2:[692,11.8],
+			3:[1171,14.9],
+			4:[817,13.9]
+		},
+		12:{
+			1:[470,6.9],
+			2:[703,10.5],
+			3:[898,14.8]
+		},
+		13:{
+			1:[250,4.5],
+			2:[698,11.9],
+			3:[941,15.2],
+			4:[961,14.6]
+		},
+		14:{
+			1:[221,5.8],
+			2:[604,10.5],
+			3:[1235,15.8],
+			4:[1028,15.8]
+		}
+	}
+}</script>
+<style>
+@font-face{
+font-family: 'exo';
+src: url("./Exo-Medium.ttf")
+} 
+.score {
+font-family: "phi";
+
+}
+@font-face{
+font-family: 'phi';
+src: url("./phigros.ttf")
+} 
+.phi {
+font-family: "phi";
+
+}
+
+</style>
+<title>PhiScoreCalculator</title>
+<h1 class=score>PhiScoreCalculator</h1>
+<h2 class=score><bl class=phi>制作者：一位</bl>很帅<bl class=phi>的人</bl></h2>
+<p class=phi>谱面物量获取处</p>
+<select class=phi>
+<optgroup label="Single">
+<option>Doppelganger</option>
+<option>もぺもぺ</option>
+<option>MARENOL</option>
+<option>萤火虫の怨</option>
+<option>万吨匿名信</option>
+<option>风屿</option>
+<option title="dB doll from SOUL NOTES">dB doll</option>
+<option title="Dash from SOUL NOTES">Dash</option>
+<option title="云女孩 from SOUL NOTES">云女孩</option>
+<option title="Drop It from SOUL NOTES">Drop It</option>
+<option title="RIPPER It from SOUL NOTES">RIPPER</option>
+<option>Aphasia</option>
+<option>开心病</option>
+<option>華灯爱</option>
+<option>Find_Me</option>
+<option>Sein</option>
+<option>狂喜蘭舞</option>
+<option>Sparkle New Life</option>
+<option>Khronostatis Katharsis</option>
+<option>Snow Desert</option>
+<option>Burn</option>
+<option>Aleph-0</option>
+<option>Next Time</option>
+<option>Rubbish Sorting</option>
+<option>Dead Soul</option>
+<option>Speed Up!</option>
+<option>Magenta Potion</option>
+<option title="Get Back It from SOUL NOTES">Get Back</option>
+<option>Palescreen</option>
+<option title="The Monutain Eater from MUSYNC">The Mountain Eater</option>
+<option>Orthodox</option>
+<option>End Me</option>
+<option>Parallel Retrogression(Game Ver.)</option>
+<option>Starduster</option>
+<option>Electron</option>
+<option>SIGMA</option>
+<option>Hardcore Kwaya</option>
+<option>Äventyr</option>
+<option>Träne</option>
+<option>雪降り、メリクリ</option>
+<option>Cervelle Connexion</option>
+<option>modulus</option>
+<option>Shadow</option>
+<option>Wavetapper</option>
+<option>大和撫子 -Wild Dances-</option>
+<option>Eltaw</option>
+<option>Better Graphic Animation</option>
+<option>With You</option>
+<option>Unorthodox Thoughts</option>
+<option>Apocalyptic</option>
+<option>游园地</option>
+<option>energy trixxx</option>
+<option title="你和驴">Nhelv</option>
+<option>-Arkhei-</option>
+<option>Kerberos</option>
+<option>ρars/ey</option>
+<option>Concvssion</option>
+<option>ジングルベル(Jingle Bell)</option>
+<option>Dreamland</option>
+<option>Another Round</option>
+<option>996</option>
+<option>Future Mind</option>
+<option>Luminescent</option>
+<option>FULi AUTO BUSTER</option>
+<option>I Must Say No</option>
+<option>opia</option><option disabled></option>
+</optgroup>
+<optgroup label="Chapter 1">
+<option>Glaciaxion</option>
+<option>Eradication Catastrophe</option>
+<option>Credits</option>
+<option>Dlyrotz</option>
+<option>Engine x Start!! (melody mix)</option><option disabled></option>
+</optgroup>
+<optgroup label="Chapter 2">
+<option>光</option>
+<option>Winter↑Cube↓</option>
+<option>混乱-Confusion</option>
+<option>Cipher : /2&amp;//&lt;|0</option>
+<option>FULi AUTO SHOOTER</option><option disabled></option>
+</optgroup>
+<optgroup label="Chapter 3">
+<option>HumaN</option>
+<option>[PRAW]</option>
+<option>Cereris</option>
+<option>Pixel Rebelz</option>
+<option>Non-Melodic Ragez</option><option disabled></option>
+</optgroup>
+<optgroup label="Chapter 4">
+<option>Sultan Rage</option>
+<option>Class Memories</option>
+<option>-SURREALISM-</option>
+<option>Bonus Time</option>
+<option>ENERGY SYNERGY MATRIX</option><option disabled></option>
+</optgroup>
+<optgroup label="Chapter 5">
+<option>NYA!!!</option>
+<option>JunXion Between Life And Death(VIP Mix)</option>
+<option>cryout</option>
+<option>Reimei</option>
+<option>尊師 ～The Guru～</option>
+<option id=leave_all_behind>Spasmodic</option>
+<option disabled></option>
+</optgroup>
+<optgroup label="Chapter 6">
+<option>Colorful Days♪</option>
+<option>micro.wav</option>
+<option>重生</option>
+<option>NO ONE YES MAN</option>
+<option id=illegal_fangzhou>望影の方舟Six</option>
+<option disabled></option></optgroup>
+<optgroup label="Chapter 7">
+<option>Clock Paradox</option>
+<option>Chronologika</option>
+<option>Nick of Time</option>
+<option>Chronomia</option>
+<option id=illegalchrono>Chronos Collapse - La Campanella</option>
+</optgroup>
+<optgroup label="Side Story 1">
+<option>Ποσειδών</option>
+<option>WATER</option>
+<option>Miracle Forest (VIP Mix)</option>
+<option>MOBILYS<option>
+<option>Lyrith -迷宮リリス-<option>
+</optgroup>
+<optgroup label="Side Story 2"></optgroup>
+<optgroup label="KALPA"></optgroup>
+<optgroup label="Muse Dash"></optgroup>
+<optgroup label="WAVEAT"></optgroup>
+<optgroup label="GOOD"></optgroup>
+<optgroup label="HyuN"></optgroup>
+<optgroup label="Rising Sun Traxx"></optgroup>
+
+</select>
+<button class=phi>使用物量</button>
+<div class=phi>
+<input type="radio" name="nandu" value=1>EZ谱面物量
+<input type="radio" name="nandu" value=2>HD谱面物量
+<input type="radio" name="nandu" value=3 checked="checked">IN谱面物量
+<input type="radio" name="nandu" value=4 disabled=false>AT谱面物量
+<input type="radio" name="nandu" value=5 disabled>Legacy谱面物量
+<input type="radio" name="nandu" value=999 disabled>SP谱面物量
+<input type="radio" name="nandu" value=1000 disabled>?????
+</div>
+<p class=score id=score>0000000</p>
+<p class=score id=acc>0%</p><br>
+<div class=score >可得data:<bl id=get_data>0</bl>KB<br>
+单曲rks:<bl id=get_rks>0</bl><br>
+</div>
+<bl class=score>该两项计算需要输入定数</bl><br>
+<input id=dingshu type=number class=phi step=0.1 value=1.1 min=1.1 max=16.8><button id=calc_two class=phi>计算</button><br>
+<bl class=score>Total:</bl><bl class=score id=note>1</bl><br>
+<bl class=score>Perfects:</bl><bl class=score id=perf>0</bl><br>
+<bl class=score>Goods:</bl><bl class=score id=good>0</bl><br>
+<bl class=score>Max Combo:</bl><bl class=score id=maxcom>0</bl><br>
+<bl class=score>Combo:</bl><bl class=score id=com>0</bl><br>
+<button id=ano class=score>Add note</button>
+<button id=ap class=score>Add Perfect</button>
+<button id=ag class=score>Add Good</button>
+<button id=xiaojie class=score>Miss/Bad</button><br>
+<bl class=phi>不想一个一个增加？试一试这个操作吧!</bl><br>
+<bl class=phi>第一步：右键</bl><br>
+<bl class=phi>第二步：点击“审查元素”（每个浏览器可能都不一样，请你以你的浏览器为准）</bl><br>
+<bl class=phi>第三步：点击“</bl><bl class=score>Console</bl><bl class=phi>”</bl><br>
+<bl class=phi>第四步：设置good数量在下面输入“g=good数量”，perfect为“</bl><bl class=score>p=perfect数量”设置最大连击数和连击数为“m=maxcombo数量 c=combo数量”</bl><br>
+<script>
+SpasGGed="Spasmodic</option><option>Leave All Behind</option>"
+sfangzhouSixGGed="望影の方舟Six/option><option>Igallta</option>"
+TimeDonotGG="Chronos Collapse - La Campanella</option><option>Rrhar'il</option>"
+n=1
+p=0
+g=0
+m=0
+c=0
+score=0
+acc=0
+function update(){
+	score = ((100000 * ((9 * p + 5.85 * g) + m)) / n)
+	acc = (p+g*0.65)/n*100
+	document.getElementById("note").innerHTML=n.toString()
+	document.getElementById("perf").innerHTML=p.toString()
+	document.getElementById("good").innerHTML=g.toString()
+	document.getElementById("maxcom").innerHTML=m.toString()
+	document.getElementById("com").innerHTML=c.toString()
+	document.getElementById("acc").innerHTML=acc.toString()+"%"
+	document.getElementById("score").innerHTML=scoreFormat(score.toString())
+}
+function single_rks(acc,dingshu){
+	if (acc<70){
+	    return 0
+	}else{
+	    return Math.pow(((acc - 55)/45),2)*dingshu
+	}
+}
+function get_max_data(dingshu){
+	if (dingshu<7.0){
+		return 256
+	}else {
+		if(dingshu<10.0){
+			return 512
+		}else {
+			if (dingshu<13.0){
+			    return 768
+			}else
+			    if(dingshu<15.0){
+					return 1024
+				}else{
+					if(dingshu<16.0){
+						return 1280
+					}else{
+						if(dingshu<17.0){
+							return 1536
+						}else{return 0} 
+					}
+				}
+		}
+	}
+	
+}
+function get_data(dingshu){
+	if (score<880000){
+		return 0
+	}else{
+		return ((score-700000)/300000)*get_max_data(dingshu)
+	}
+}
+function scoreFormat(sc){
+    if (sc=="0"){return "0000000"} 
+	if (score>=1000000){return "1000000"}
+	return (7-sc.toString().length)*"0"+sc.toString()
+}
+function addGood(){
+    g+=1;
+	c+=1;
+	if (c>m){
+	    m=c
+	}
+	update()
+}
+
+function addPerfect(){
+    p+=1;c+=1;
+	if (c>m){
+	    m=c
+	}
+	update()
+}
+
+function miss(){
+    c=0;
+	if (c>m){
+	    m=c
+	}
+	update()
+}
+
+function addnote(){
+    n+=1;
+	if (c>m){
+	    m=c
+	}
+	update()
+}
+
+document.getElementById("ano").addEventListener("click",addnote)
+document.getElementById("ap").addEventListener("click",addPerfect)
+document.getElementById("ag").addEventListener("click",addGood)
+document.getElementById("xiaojie").addEventListener("click",miss)
+
+function calc_two(){
+	document.getElementById("get_rks").innerHTML = single_rks(acc,new Number(document.getElementById("dingshu").value)).toString()
+	document.getElementById("get_data").innerHTML = get_data(new Number(document.getElementById("dingshu").value))
+}
+document.getElementById("calc_two").addEventListener("click",calc_two)
+</script>
+<br>
+<br>
+<br>
+<br>
+<div class=phi>
+v0.1
+增加了分数，acc，perfect,good,maxcombo和combo数量
+<br><br>
+v0.2
+增加了可得data(定数超过17 data一定为0)，单曲rks的计算<br>
+</div>
